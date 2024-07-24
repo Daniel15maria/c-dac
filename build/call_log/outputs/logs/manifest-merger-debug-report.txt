@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:1:1-5:12
+	package
+		ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:2:3-29
+		INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:3:5-71
+	android:name
+		ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:3:22-69
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:4:5-74
+	android:name
+		ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml:4:22-72
+uses-sdk
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+		ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+		ADDED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/android/src/main/AndroidManifest.xml

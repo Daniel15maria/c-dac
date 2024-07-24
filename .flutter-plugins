@@ -1,0 +1,13 @@
+# This is a generated file; do not edit or check into version control.
+call_log=/Users/simusohil/.pub-cache/hosted/pub.dev/call_log-4.0.0/
+contacts_service=/Users/simusohil/.pub-cache/hosted/pub.dev/contacts_service-0.6.3/
+flutter_callkit_incoming=/Users/simusohil/.pub-cache/hosted/pub.dev/flutter_callkit_incoming-1.0.3+3/
+flutter_local_notifications=/Users/simusohil/.pub-cache/hosted/pub.dev/flutter_local_notifications-17.2.1+2/
+flutter_local_notifications_linux=/Users/simusohil/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-4.0.1/
+permission_handler=/Users/simusohil/.pub-cache/hosted/pub.dev/permission_handler-11.3.1/
+permission_handler_android=/Users/simusohil/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.7/
+permission_handler_apple=/Users/simusohil/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.5/
+permission_handler_html=/Users/simusohil/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.1/
+permission_handler_windows=/Users/simusohil/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1/
+phone_state=/Users/simusohil/.pub-cache/hosted/pub.dev/phone_state-1.0.4/
+phone_state_background=/Users/simusohil/.pub-cache/hosted/pub.dev/phone_state_background-0.0.4/

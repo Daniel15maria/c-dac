@@ -1,0 +1,11 @@
+framework module phone_state {
+  umbrella header "phone_state-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module phone_state.Swift {
+  header "phone_state-Swift.h"
+  requires objc
+}

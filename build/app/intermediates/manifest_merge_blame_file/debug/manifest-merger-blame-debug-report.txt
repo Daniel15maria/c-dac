@@ -1,0 +1,310 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dac_pract"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/simusohil/Developer/Internship/cdac/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/simusohil/Developer/Internship/cdac/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:4:5-75
+16-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:4:22-72
+17    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+17-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:5:5-72
+17-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:5:22-69
+18    <uses-permission android:name="android.permission.READ_CONTACTS" />
+18-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:6:6-73
+18-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:6:23-70
+19    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+19-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:7:5-73
+19-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:7:22-70
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:8:5-81
+20-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:8:22-78
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:9:5-77
+21-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:9:22-74
+22    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+22-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:10:5-77
+22-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:10:22-74
+23    <!--
+24 Required to query activities that can process text, see:
+25         https://developer.android.com/training/package-visibility?hl=en and
+26         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+27
+28         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+29    -->
+30    <queries>
+30-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:60:5-65:15
+31        <intent>
+31-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:61:9-64:18
+32            <action android:name="android.intent.action.PROCESS_TEXT" />
+32-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:62:13-72
+32-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:62:21-70
+33
+34            <data android:mimeType="text/plain" />
+34-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:63:13-50
+34-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:63:19-48
+35        </intent>
+36        <intent>
+36-->[:contacts_service] /Users/simusohil/Developer/Internship/cdac/build/contacts_service/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+37            <action android:name="android.accounts.AccountAuthenticator" />
+37-->[:contacts_service] /Users/simusohil/Developer/Internship/cdac/build/contacts_service/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-76
+37-->[:contacts_service] /Users/simusohil/Developer/Internship/cdac/build/contacts_service/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-73
+38        </intent> <!-- Allows the app to load an icon corresponding to the custom MIME type. -->
+39        <intent>
+39-->[:contacts_service] /Users/simusohil/Developer/Internship/cdac/build/contacts_service/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-21:18
+40            <action android:name="android.intent.action.VIEW" />
+40-->[:contacts_service] /Users/simusohil/Developer/Internship/cdac/build/contacts_service/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-65
+40-->[:contacts_service] /Users/simusohil/Developer/Internship/cdac/build/contacts_service/intermediates/merged_manifest/debug/AndroidManifest.xml:15:21-62
+41
+42            <data
+42-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:63:13-50
+43                android:host="com.android.contacts"
+44                android:mimeType="vnd.android.cursor.item/*"
+44-->/Users/simusohil/Developer/Internship/cdac/android/app/src/main/AndroidManifest.xml:63:19-48
+45                android:scheme="content" />
+46        </intent>
+47    </queries>
+48
+49    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+49-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+49-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+50    <uses-permission android:name="android.permission.VIBRATE" />
+50-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-66
+50-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-63
+51    <uses-permission android:name="android.permission.WAKE_LOCK" />
+51-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-68
+51-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-65
+52    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+52-->[:flutter_local_notifications] /Users/simusohil/Developer/Internship/cdac/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-77
+52-->[:flutter_local_notifications] /Users/simusohil/Developer/Internship/cdac/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-74
+53
+54    <permission
+54-->[androidx.core:core:1.13.1] /Users/simusohil/.gradle/caches/transforms-3/fac84cd5ecf1ec88a8c98571217c9350/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+55        android:name="com.example.dac_pract.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+55-->[androidx.core:core:1.13.1] /Users/simusohil/.gradle/caches/transforms-3/fac84cd5ecf1ec88a8c98571217c9350/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+56        android:protectionLevel="signature" />
+56-->[androidx.core:core:1.13.1] /Users/simusohil/.gradle/caches/transforms-3/fac84cd5ecf1ec88a8c98571217c9350/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+57
+58    <uses-permission android:name="com.example.dac_pract.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+58-->[androidx.core:core:1.13.1] /Users/simusohil/.gradle/caches/transforms-3/fac84cd5ecf1ec88a8c98571217c9350/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+58-->[androidx.core:core:1.13.1] /Users/simusohil/.gradle/caches/transforms-3/fac84cd5ecf1ec88a8c98571217c9350/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+59
+60    <application
+61        android:name="android.app.Application"
+62        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+62-->[androidx.core:core:1.13.1] /Users/simusohil/.gradle/caches/transforms-3/fac84cd5ecf1ec88a8c98571217c9350/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+63        android:debuggable="true"
+64        android:icon="@mipmap/ic_launcher"
+65        android:label="dac_pract" >
+66        <activity
+67            android:name="com.example.dac_pract.MainActivity"
+68            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+69            android:exported="true"
+70            android:hardwareAccelerated="true"
+71            android:launchMode="singleTop"
+72            android:theme="@style/LaunchTheme"
+73            android:windowSoftInputMode="adjustResize" >
+74
+75            <!--
+76                 Specifies an Android theme to apply to this Activity as soon as
+77                 the Android process has started. This theme is visible to the user
+78                 while the Flutter UI initializes. After that, this theme continues
+79                 to determine the Window background behind the Flutter UI.
+80            -->
+81            <meta-data
+82                android:name="io.flutter.embedding.android.NormalTheme"
+83                android:resource="@style/NormalTheme" />
+84
+85            <intent-filter>
+86                <action android:name="android.intent.action.MAIN" />
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+89            </intent-filter>
+90        </activity>
+91
+92        <!-- Broadcast receiver for handling phone state changes -->
+93        <receiver
+94            android:name="me.sodipto.phone_state_background.PhoneStateBackgroundServiceReceiver"
+95            android:exported="false" >
+96            <intent-filter>
+97                <action android:name="android.intent.action.PHONE_STATE" />
+98            </intent-filter>
+99        </receiver>
+100
+101        <!--
+102             Don't delete the meta-data below.
+103             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+104        -->
+105        <meta-data
+106            android:name="flutterEmbedding"
+107            android:value="2" />
+108
+109        <activity
+109-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-29:20
+110            android:name="com.hiennv.flutter_callkit_incoming.CallkitIncomingActivity"
+110-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-87
+111            android:excludeFromRecents="true"
+111-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-46
+112            android:exported="true"
+112-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-36
+113            android:launchMode="singleTask"
+113-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-44
+114            android:screenOrientation="portrait"
+114-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-49
+115            android:showOnLockScreen="true"
+115-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-44
+116            android:theme="@style/CallkitIncomingTheme"
+116-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-56
+117            android:turnScreenOn="true" >
+117-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-40
+118            <intent-filter>
+118-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-28:29
+119                <action android:name="com.example.dac_pract.com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING" />
+119-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-116
+119-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-113
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-76
+121-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:27:27-73
+122            </intent-filter>
+123        </activity>
+124        <activity
+124-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:30:9-33:55
+125            android:name="com.hiennv.flutter_callkit_incoming.TransparentActivity"
+125-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-83
+126            android:exported="false"
+126-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-37
+127            android:theme="@style/TranslucentTheme" />
+127-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-52
+128
+129        <receiver
+129-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-46:20
+130            android:name="com.hiennv.flutter_callkit_incoming.CallkitIncomingBroadcastReceiver"
+130-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-96
+131            android:enabled="true"
+131-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-35
+132            android:exported="true" >
+132-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-36
+133            <intent-filter>
+133-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-45:29
+134                <action android:name="com.example.dac_pract.com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING" />
+134-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-116
+134-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-113
+135                <action android:name="com.example.dac_pract.com.hiennv.flutter_callkit_incoming.ACTION_CALL_ACCEPT" />
+135-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:41:17-114
+135-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:41:25-111
+136                <action android:name="com.example.dac_pract.com.hiennv.flutter_callkit_incoming.ACTION_CALL_DECLINE" />
+136-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:42:17-115
+136-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:42:25-112
+137                <action android:name="com.example.dac_pract.com.hiennv.flutter_callkit_incoming.ACTION_CALL_ENDED" />
+137-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:43:17-113
+137-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:43:25-110
+138                <action android:name="com.example.dac_pract.com.hiennv.flutter_callkit_incoming.ACTION_CALL_TIMEOUT" />
+138-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:44:17-115
+138-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:44:25-112
+139            </intent-filter>
+140        </receiver>
+141
+142        <service
+142-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:48:9-51:39
+143            android:name="com.hiennv.flutter_callkit_incoming.CallkitSoundPlayerService"
+143-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:49:13-89
+144            android:enabled="true"
+144-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:50:13-35
+145            android:exported="true" />
+145-->[:flutter_callkit_incoming] /Users/simusohil/Developer/Internship/cdac/build/flutter_callkit_incoming/intermediates/merged_manifest/debug/AndroidManifest.xml:51:13-36
+146
+147        <uses-library
+147-->[androidx.window:window:1.2.0] /Users/simusohil/.gradle/caches/transforms-3/d47b1192960df52846144d82ac9e1d6f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+148            android:name="androidx.window.extensions"
+148-->[androidx.window:window:1.2.0] /Users/simusohil/.gradle/caches/transforms-3/d47b1192960df52846144d82ac9e1d6f/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+149            android:required="false" />
+149-->[androidx.window:window:1.2.0] /Users/simusohil/.gradle/caches/transforms-3/d47b1192960df52846144d82ac9e1d6f/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+150        <uses-library
+150-->[androidx.window:window:1.2.0] /Users/simusohil/.gradle/caches/transforms-3/d47b1192960df52846144d82ac9e1d6f/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+151            android:name="androidx.window.sidecar"
+151-->[androidx.window:window:1.2.0] /Users/simusohil/.gradle/caches/transforms-3/d47b1192960df52846144d82ac9e1d6f/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+152            android:required="false" />
+152-->[androidx.window:window:1.2.0] /Users/simusohil/.gradle/caches/transforms-3/d47b1192960df52846144d82ac9e1d6f/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+153
+154        <provider
+154-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+155            android:name="androidx.startup.InitializationProvider"
+155-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+156            android:authorities="com.example.dac_pract.androidx-startup"
+156-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+157            android:exported="false" >
+157-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+158            <meta-data
+158-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+159                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+159-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+160                android:value="androidx.startup" />
+160-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/simusohil/.gradle/caches/transforms-3/d674cd90e13def17f77b3f8010d35e09/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+161            <meta-data
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+162                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+163                android:value="androidx.startup" />
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+164        </provider>
+165        <provider
+165-->[com.squareup.picasso:picasso:2.71828] /Users/simusohil/.gradle/caches/transforms-3/ca6d4b24576a42ca0d8a952dec56975a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+166            android:name="com.squareup.picasso.PicassoProvider"
+166-->[com.squareup.picasso:picasso:2.71828] /Users/simusohil/.gradle/caches/transforms-3/ca6d4b24576a42ca0d8a952dec56975a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+167            android:authorities="com.example.dac_pract.com.squareup.picasso"
+167-->[com.squareup.picasso:picasso:2.71828] /Users/simusohil/.gradle/caches/transforms-3/ca6d4b24576a42ca0d8a952dec56975a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+168            android:exported="false" />
+168-->[com.squareup.picasso:picasso:2.71828] /Users/simusohil/.gradle/caches/transforms-3/ca6d4b24576a42ca0d8a952dec56975a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+169
+170        <receiver
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+171            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+172            android:directBootAware="false"
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+173            android:enabled="true"
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+174            android:exported="true"
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+175            android:permission="android.permission.DUMP" >
+175-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+176            <intent-filter>
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+177                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+178            </intent-filter>
+179            <intent-filter>
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+180                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+181            </intent-filter>
+182            <intent-filter>
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+183                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+184            </intent-filter>
+185            <intent-filter>
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+186                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/simusohil/.gradle/caches/transforms-3/166e5df34c1c015ef6ddeae137513a3f/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+187            </intent-filter>
+188        </receiver>
+189    </application>
+190
+191</manifest>

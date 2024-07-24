@@ -1,0 +1,40 @@
+name: dac_pract
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^11.3.1
+  phone_state: ^1.0.4
+  phone_state_background: ^0.0.4
+  call_log: ^4.0.0
+  convex_bottom_bar: ^3.2.0
+  contacts_service: ^0.6.3
+  flutter_callkit_incoming: ^1.0.0
+  intl: ^0.19.0
+  flutter_local_notifications: ^17.2.1+2
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  android_adaptive_icon_background: "#FFFFFF"
+  android_adaptive_icon_foreground: "assets/logo.png"
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
