@@ -4,6 +4,7 @@ import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:phone_state_background/phone_state_background.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'spam_num_verify.dart';
 
 @pragma('vm:entry-point')
 Future<void> phoneStateBackgroundCallbackHandler(
@@ -31,7 +32,10 @@ Future<void> phoneStateBackgroundCallbackHandler(
     String notificationMessage = isSpam
         ? 'Incoming call from $number (SPAM-ALERT)'
         : 'Incoming call from $number (Unknown)';
-    await PhoneStateBackgroundHandler.showNotification('Unknown Number', notificationMessage);
+    String mainNotificationMessage = isSpam
+        ? 'SPAM-NUMBER'
+        : 'Unknown Number $number';
+    await PhoneStateBackgroundHandler.showNotification(mainNotificationMessage, notificationMessage);
   }
 
   // Handle different phone state events
@@ -194,12 +198,6 @@ class PhoneStateBackgroundHandler {
 }
 
 Future<bool> reportSpamNumber(String phoneNumber) async {
-  List<String> scamNumbers = [
-    "+919360468002",
-    "+442034567890",
-    "+919345673812",
-  ]; // Replace with your actual list
-
   String normalizedPhoneNumber = PhoneStateBackgroundHandler.normalizePhoneNumber(phoneNumber);
   bool isScam = scamNumbers.any((number) =>
       PhoneStateBackgroundHandler.normalizePhoneNumber(number) == normalizedPhoneNumber);
